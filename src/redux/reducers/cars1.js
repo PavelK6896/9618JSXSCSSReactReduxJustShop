@@ -1,12 +1,42 @@
-import ImgPng1 from "../../../img/1.png";
-import ImgJpg1 from "../../../img/1.jpg";
-import ImgJpg2 from "../../../img/2.jpg";
+import ImgPng1 from "../img/png/1.png";
+import ImgPng2 from "../img/png/2.png";
+import ImgPng3 from "../img/png/3.png";
+import ImgPng4 from "../img/png/4.png";
 
 const initialState = {
     cars1: [
-        {name: 'UAZ1', year: '2020', src: ImgPng1, text: 'UAZ1 text ...'},
-        {name: 'UAZ2', year: '2018', src: ImgJpg1, text: 'UAZ2 text ...'},
-        {name: 'UAZ3', year: '2002', src: ImgJpg2, text: 'UAZ3 text ...'},
+        {
+            name: 'UAZ.1',
+            year: '2020',
+            src: ImgPng1,
+            BriefDescription: "text BriefDescription",
+            Specifications: "text Specifications",
+            DetailedDescription: "text DetailedDescription"
+        },
+        {
+            name: 'UAZ.2',
+            year: '2020',
+            src: ImgPng2,
+            BriefDescription: "text BriefDescription",
+            Specifications: "text Specifications",
+            DetailedDescription: "text DetailedDescription"
+        },
+        {
+            name: 'UAZ.3',
+            year: '2020',
+            src: ImgPng3,
+            BriefDescription: "text BriefDescription",
+            Specifications: "text Specifications",
+            DetailedDescription: "text DetailedDescription"
+        },
+        {
+            name: 'UAZ.4',
+            year: '2020',
+            src: ImgPng4,
+            BriefDescription: "text BriefDescription",
+            Specifications: "text Specifications",
+            DetailedDescription: "text DetailedDescription"
+        },
     ]
 }
 

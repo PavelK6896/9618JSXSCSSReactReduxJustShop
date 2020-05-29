@@ -26,11 +26,8 @@ const Options = (props) => {
                     flexDirection: "column",
                     margin: 10,
                     padding: 10
-
-
                 }}>
-
-
+                    <h3>Название: {props.cars[props.match.params.id].name} Год: {props.cars[props.match.params.id].year}</h3>
                     <div style={{
                         fontSize: '18px',
                         fontWeight: 400,
@@ -43,7 +40,8 @@ const Options = (props) => {
                             fontStyle: 'italic',
                             lineHeight: '16px'
                         }}>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, quisquam?
+                            {props.cars[props.match.params.id].BriefDescription}
+                            &nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         </p>
                         <h3 className="OptionsH3"> Характеристики</h3>
                         <p style={{
@@ -54,8 +52,8 @@ const Options = (props) => {
                             lineHeight: '36px',
                             textAlign: 'center',
                         }}>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid eos eum excepturi
-                            ipsa necessitatibus!
+                            {props.cars[props.match.params.id].Specifications}
+                            &nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         </p>
                         <h3 className="OptionsH3"> Подробное описание товара</h3>
                         <p style={{
@@ -66,20 +64,10 @@ const Options = (props) => {
                             lineHeight: '24px',
                             textAlign: 'left',
                         }}>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur culpa dolorum in magni
-                            maxime minus nesciunt pariatur quia vel. Amet assumenda facilis fuga, fugiat non odit qui
-                            rem velit vitae?
+                            {props.cars[props.match.params.id].DetailedDescription}
+                            &nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         </p>
                     </div>
-
-
-                    <label>Название: {props.cars[props.match.params.id].name}</label>
-
-                    <label>Год: {props.cars[props.match.params.id].year}</label>
-
-                    <label>Описание: {props.cars[props.match.params.id].text}</label>
-
-
                 </div>
             </main>
             <Footer/>
