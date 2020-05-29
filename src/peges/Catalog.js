@@ -1,8 +1,9 @@
 import React from "react";
-import {Navbar} from "../components/Navbar";
+import {Navbar} from "../components/Navbar/Navbar";
 import {Footer} from "../components/Footer";
 import {Goods} from "../components/Goods";
 import {connect} from 'react-redux'
+
 
 const Catalog = (props) => {
     return (
@@ -11,6 +12,8 @@ const Catalog = (props) => {
             <main style={{
                 display: 'flex',
                 justifyContent: 'center',
+                flexWrap: 'wrap'
+
             }}>
                 {
                     props.cars.map((car, index) => {
@@ -33,7 +36,7 @@ const Catalog = (props) => {
 
 function mapStateToProps(state) {
     return {
-        cars: state.cars1.cars1
+        cars: [...state.cars1.cars1, ...state.cars2.cars2]
     }
 }
 

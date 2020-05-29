@@ -1,10 +1,9 @@
 import React from 'react';
 import {connect} from "react-redux";
-import {Navbar} from "../components/Navbar";
+import {Navbar} from "../components/Navbar/Navbar";
 import {Footer} from "../components/Footer";
 
 const Options = (props) => {
-
     return (
         <div>
             <Navbar/>
@@ -77,7 +76,7 @@ const Options = (props) => {
 
 function mapStateToProps(state) {
     return {
-        cars: state.cars1.cars1
+        cars: [...state.cars1.cars1, ...state.cars2.cars2]
     }
 }
 

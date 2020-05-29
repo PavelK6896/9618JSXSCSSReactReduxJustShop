@@ -7,6 +7,7 @@ export const Goods = (props) => {
             maxWidth: "10vw",
             display: 'flex',
             justifyContent: 'center',
+            flexWrap: 'wrap'
         }}>
             <NavLink to={"/catalog/" + props.key2}>
                 <img className="card-img-top"
