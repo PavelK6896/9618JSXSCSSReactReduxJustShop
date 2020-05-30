@@ -1,13 +1,15 @@
 import React from "react";
-import {Navbar} from "../components/Navbar";
+import {Navbar} from "../components/Navbar/Navbar";
 import {Footer} from "../components/Footer";
 import {Goods} from "../components/Goods";
 import {connect} from 'react-redux'
+
 
 const Catalog = (props) => {
     return (
         <>
             <Navbar/>
+
             <main className="main">
                 <div className="container">
                     <div className="row">

@@ -1,11 +1,10 @@
 import React from 'react';
 import {connect} from "react-redux";
-import {Navbar} from "../components/Navbar";
+import {Navbar} from "../components/Navbar/Navbar";
 import {Footer} from "../components/Footer";
 import {Header} from "../components/Header";
 
 const Options = (props) => {
-
     return (
         <>
 

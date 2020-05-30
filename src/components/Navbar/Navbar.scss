@@ -1,0 +1,48 @@
+
+$color-a: #f8f8f8;
+$color-a-hover: #999;
+
+.navbar {
+  display: flex;
+  border: 3px solid green;
+  background-color: #444;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding: 0.7rem;
+  margin-right: 10rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  text-decoration: none;
+  color: $color-a;
+
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.navbar-brand:hover {
+  color: $color-a-hover;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: $color-a;
+}
+
+.nav-link:hover{
+  color: $color-a-hover;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  float: left;
+  flex-wrap: wrap;
+
+}
+
+.nav-link{
+  padding-left: 10px;
+}
