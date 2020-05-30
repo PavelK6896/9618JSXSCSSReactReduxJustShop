@@ -31,7 +31,7 @@ const Options = (props) => {
                         textAlign: 'center',
                         flexDirection: "column",
                         margin: 10,
-                        padding: 10
+                        padding: 9
                     }}>
                         <h3>Название: {props.cars[props.match.params.id].name} Год: {props.cars[props.match.params.id].year}</h3>
                         <div style={{
