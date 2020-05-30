@@ -6,34 +6,35 @@ import {connect} from 'react-redux'
 
 const Catalog = (props) => {
     return (
-        <div>
+        <>
             <Navbar/>
-            <main style={{
-                display: 'flex',
-                justifyContent: 'center',
-            }}>
-                {
-                    props.cars.map((car, index) => {
-                        return (
-                            <Goods
-                                key={index}
-                                key2={index}
-                                year={car.year}
-                                name={car.name}
-                                src={car.src}
-                            />
-                        )
-                    })
-                }
+            <main className="main">
+                <div className="container">
+                    <div className="row">
+                        {
+                            props.cars.map((car, index) => {
+                                return (
+                                    <Goods
+                                        key={index}
+                                        key2={index}
+                                        year={car.year}
+                                        name={car.name}
+                                        src={car.src}
+                                    />
+                                )
+                            })
+                        }
+                    </div>
+                </div>
             </main>
             <Footer/>
-        </div>
+        </>
     )
 }
 
 function mapStateToProps(state) {
     return {
-        cars: state.cars1.cars1
+        cars: [...state.cars1.cars1, ...state.cars2.cars2]
     }
 }
 

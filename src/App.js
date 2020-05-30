@@ -7,15 +7,15 @@ import {Contacts} from "./peges/Contacts";
 
 function App() {
     return (
-        <div className="container">
-            <Switch>
-                <Route path={'/main'} component={Main}/>
-                <Route path={'/catalog'} exact component={Catalog}/>
-                <Route path={'/catalog/:id'} render={(props) => (<Options {...props}/>)}/>
-                <Route path={'/contacts'} exact component={Contacts}/>
-                <Route path={''} component={Main}/>
-            </Switch>
-        </div>
+
+                <Switch>
+                    <Route path={'/main'} component={Main}/>
+                    <Route path={'/catalog'} exact component={Catalog}/>
+                    <Route path={'/catalog/:id'} render={(props) => (<Options {...props}/>)}/>
+                    <Route path={'/contacts'} exact component={Contacts}/>
+                    <Route path={''} component={Main}/>
+                </Switch>
+
     );
 }
 

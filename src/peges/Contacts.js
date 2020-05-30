@@ -14,14 +14,16 @@ export const Contacts = () => {
     ];
 
     return (
-        <div>
+        <>
             <Navbar/>
-            <main>
+            <main className="main">
+            <div className="container">
+
                 <label htmlFor="exampleFormControlInput1">Напишите нам</label>
-                <form style={{maxWidth: "15vw",}}>
+                <form >
                     <div className="form-group">
                         <input type="name" className="form-control" id="exampleFormControlInput2"
-                               placeholder="Ivan"/>
+                               placeholder="Имя"/>
                     </div>
                     <div className="form-group">
                         <input type="email" className="form-control" id="exampleFormControlInput1"
@@ -46,8 +48,9 @@ export const Contacts = () => {
                         {coordinates.map(coordinate => <Placemark key={coordinate.toString()} geometry={coordinate}/>)}
                     </Map>
                 </YMaps>
+            </div>
             </main>
             <Footer/>
-        </div>
+        </>
     )
 }
