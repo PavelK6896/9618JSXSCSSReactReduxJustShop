@@ -2,23 +2,23 @@ import React from 'react';
 import {connect} from "react-redux";
 import {Navbar} from "../components/Navbar";
 import {Footer} from "../components/Footer";
-import {Header} from "../components/Header";
 
 const Options = (props) => {
 
     return (
         <>
-
             <Navbar/>
             <main className="main">
                 <div className="container">
-                    <img src={props.cars[props.match.params.id].src}
-                         alt={props.name}
-                         title={props.name}
-                         width={500}
-                         height={500}
-                    />
-                    <div className="d-flex justify-content-between align-items-center">
+                    <div className="d-flex justify-content-center align-items-center">
+                        <img src={props.cars[props.match.params.id].src}
+                             alt={props.name}
+                             title={props.name}
+                             width={'500vw'}
+                        />
+                    </div>
+
+                    <div className="d-flex justify-content-center align-items-center">
                         <div className="btn-group">
                             <button type="button" className="btn btn-sm btn-outline-secondary">Сравнить</button>
                             <button type="button" className="btn btn-sm btn-outline-secondary">Купить</button>

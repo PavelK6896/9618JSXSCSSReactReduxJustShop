@@ -17,38 +17,66 @@ export const Contacts = () => {
         <>
             <Navbar/>
             <main className="main">
-            <div className="container">
+                <div className="container">
 
-                <label htmlFor="exampleFormControlInput1">Напишите нам</label>
-                <form >
-                    <div className="form-group">
-                        <input type="name" className="form-control" id="exampleFormControlInput2"
-                               placeholder="Имя"/>
-                    </div>
-                    <div className="form-group">
-                        <input type="email" className="form-control" id="exampleFormControlInput1"
-                               placeholder="name@example.com"/>
-                    </div>
-                    <div className="form-group">
-                        <input type="text" className="form-control" id="exampleFormControlInput19"
-                               placeholder="Тема"/>
-                    </div>
-                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3">
+                    <label htmlFor="exampleFormControlInput1">Напишите нам</label>
+                    <form>
+                        <div className="form-group">
+                            <input type="name" className="form-control" id="exampleFormControlInput2"
+                                   placeholder="Имя"/>
+                        </div>
+                        <div className="form-group">
+                            <input type="email" className="form-control" id="exampleFormControlInput1"
+                                   placeholder="name@example.com"/>
+                        </div>
+                        <div className="form-group">
+                            <input type="text" className="form-control" id="exampleFormControlInput19"
+                                   placeholder="Тема"/>
+                        </div>
+                        <textarea className="form-control" id="exampleFormControlTextarea1" rows="3">
                     </textarea>
-                    <button type="submit" className="btn btn-dark mb-2">send</button>
-                    <button type="reset" className="btn btn-dark mb-2">delete</button>
-                    <button type="button" className="btn btn-dark mb-2">but</button>
-                </form>
-                <div className="text-body">
-                    <h3>Адрес:</h3>
-                    <p>+78209596986<br/>Moscow<br/>78209596986@mail.com</p>
+
+                        <button type="submit" className="btn btn-dark mb-3 float-md-right">send</button>
+                        <button type="reset" className="btn btn-dark mb-3">delete</button>
+
+                    </form>
+                    <div className="d-flex justify-content-around align-items-center">
+                        <div>
+                            <div className="text-body">
+                                <h3>Адрес:</h3>
+                                <p>+78209596986<br/>Moscow<br/>78209596986@mail.com</p>
+                            </div>
+                            <YMaps>
+                                <Map defaultState={mapData}>
+                                    {coordinates.map(coordinate => <Placemark key={coordinate.toString()}
+                                                                              geometry={coordinate}/>)}
+                                </Map>
+                            </YMaps>
+                        </div>
+                        <div style={{
+                            maxWidth: '30vw'
+                        }}>
+                            <div>
+                                <h6>Отзыв1</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus,
+                                    exercitationem harum impedit quis reprehenderit?</p>
+                            </div>
+                            <div>
+                                <h6>Отзыв2</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus,
+                                    exercitationem harum impedit quis reprehenderit?</p>
+                            </div>
+                            <div>
+                                <h6>Отзыв3</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus,
+                                    exercitationem harum impedit quis reprehenderit?</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
                 </div>
-                <YMaps>
-                    <Map defaultState={mapData}>
-                        {coordinates.map(coordinate => <Placemark key={coordinate.toString()} geometry={coordinate}/>)}
-                    </Map>
-                </YMaps>
-            </div>
             </main>
             <Footer/>
         </>

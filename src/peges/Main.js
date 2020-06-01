@@ -10,10 +10,12 @@ export const Main = () => {
         <>
             <Navbar/>
             <Header/>
-            <main className="main">
+            <main className="main" style={{
+                minHeight: '60vh'
+            }}>
                 <div className="container">
 
-                    <div className="mx-auto text-body mx-md-5">
+                    <div className="mx-auto text-body mx-md-5" >
                         <p>Добро пожаловать в "Красно-Серый"!</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores assumenda autem,
                             corporis,
