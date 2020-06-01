@@ -7,7 +7,6 @@ import {Contacts} from "./peges/Contacts";
 
 function App() {
     return (
-
                 <Switch>
                     <Route path={'/main'} component={Main}/>
                     <Route path={'/catalog'} exact component={Catalog}/>
@@ -15,7 +14,6 @@ function App() {
                     <Route path={'/contacts'} exact component={Contacts}/>
                     <Route path={''} component={Main}/>
                 </Switch>
-
     );
 }
 
