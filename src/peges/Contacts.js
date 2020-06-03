@@ -18,7 +18,6 @@ export const Contacts = () => {
             <Navbar/>
             <main className="main">
                 <div className="container">
-
                     <label htmlFor="exampleFormControlInput1">Напишите нам</label>
                     <form>
                         <div className="form-group">
@@ -35,10 +34,8 @@ export const Contacts = () => {
                         </div>
                         <textarea className="form-control" id="exampleFormControlTextarea1" rows="3">
                     </textarea>
-
                         <button type="submit" className="btn btn-dark mb-3 float-md-right">send</button>
                         <button type="reset" className="btn btn-dark mb-3">delete</button>
-
                     </form>
                     <div className="d-flex justify-content-around align-items-center">
                         <div>
@@ -57,25 +54,22 @@ export const Contacts = () => {
                             maxWidth: '30vw'
                         }}>
                             <div>
-                                <h6>Отзыв1</h6>
+                                <h6>Отзыв 1</h6>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus,
                                     exercitationem harum impedit quis reprehenderit?</p>
                             </div>
                             <div>
-                                <h6>Отзыв2</h6>
+                                <h6>Отзыв 2</h6>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus,
                                     exercitationem harum impedit quis reprehenderit?</p>
                             </div>
                             <div>
-                                <h6>Отзыв3</h6>
+                                <h6>Отзыв 3</h6>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus,
                                     exercitationem harum impedit quis reprehenderit?</p>
                             </div>
-
                         </div>
                     </div>
-
-
                 </div>
             </main>
             <Footer/>

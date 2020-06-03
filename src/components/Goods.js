@@ -8,7 +8,7 @@ export const Goods = (props) => {
                     <NavLink to={"/catalog/" + props.key2}>
                         <div style={{
                             position: 'relative',
-                            height: '40vh',
+                            height: '25vh',
                             overflow:'hidden',
                         }}>
                         <img className="bd-placeholder-img card-img-top"
