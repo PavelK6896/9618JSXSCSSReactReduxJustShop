@@ -19,7 +19,6 @@ export const Navbar = () => {
         linkStyle = {
             position: 'absolute',
             zIndex: 2,
-
             display: 'flex',
             flexDirection: 'column',
         }
@@ -50,6 +49,7 @@ export const Navbar = () => {
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/contacts"> Контакты </NavLink>
                     </li>
+
                     <li className="nav-item" onMouseLeave={toggleNoHover} onClick={toggleHover}>
                         <div style={{
                             cursor: 'pointer'
@@ -62,17 +62,15 @@ export const Navbar = () => {
                                 2</a></li>
                             <li className="nav-item"><a href="#3" className="nav-link" onClick={toggleNoHover}>Список
                                 3</a></li>
+                            <li className="nav-item"><a href="#4" className="nav-link" onClick={toggleNoHover}>Список
+                                4</a></li>
+                            <li className="nav-item"><a href="#5" className="nav-link" onClick={toggleNoHover}>Список
+                                5</a></li>
                         </ul>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink className="nav-link" to="/trainer"> Тренер </NavLink>
                     </li>
                 </ul>
                 <hr/>
             </div>
-
         </nav>
     )
 }
-
-

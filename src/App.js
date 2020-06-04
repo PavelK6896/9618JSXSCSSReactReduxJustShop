@@ -4,7 +4,6 @@ import {Main} from "./peges/Main";
 import Options from "./peges/Options";
 import Catalog from "./peges/Catalog";
 import {Contacts} from "./peges/Contacts";
-import {Trainer} from "./peges/Trainer";
 
 function App() {
     return (
@@ -13,7 +12,6 @@ function App() {
                     <Route path={'/catalog'} exact component={Catalog}/>
                     <Route path={'/catalog/:id'} render={(props) => (<Options {...props}/>)}/>
                     <Route path={'/contacts'} exact component={Contacts}/>
-                    <Route path={'/trainer'} exact component={Trainer}/>
                     <Route path={''} component={Main}/>
                 </Switch>
     );
